@@ -1,0 +1,1 @@
+![MySVG](./test.svg)
