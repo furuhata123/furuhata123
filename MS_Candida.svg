@@ -1,22 +1,40 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="150" viewBox="0 0 800 150">
-  <style>
-    text {
-      fill: var(--color-fg-default, #333);
-      font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
-      font-size: 13px;
-      dominant-baseline: hanging;
-      white-space: pre; 
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="250" viewBox="0 0 800 250">
+<defs>
+    <linearGradient id="greenGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#003300; stop-opacity:1" /> <stop offset="100%" style="stop-color:#00FF00; stop-opacity:1" /> </linearGradient>
+    
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="1.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
 
+  <style>
+  * {
+    /*border: 2px solid #00FF00;  for testing */
+  }
+
+    .ascii-text {
+      fill: url(#greenGradient); 
+      filter: url(#glow); 
+      font-family: ui-monospace, monospace;
+      font-size: 13px;
+      white-space: pre;
     }
+
+
+
   </style>
 
-  <text x="400" y="20" text-anchor="middle" xml:space="preserve">
+  <text x="400" y="20" text-anchor="middle" class="ascii-text" xml:space="preserve">
     <tspan x="400" dy="0">.        :   .::::::.       .,-:::::   :::.   :::.    :::.:::::::-.  ::::::::::-.    :::.     </tspan>
     <tspan x="400" dy="1.3em">;;,.    ;;; ;;;`    `     ,;;;'````'   ;;`;;  `;;;;,  `;;; ;;,   `';,;;; ;;,   `';,  ;;`;;    </tspan>
     <tspan x="400" dy="1.3em">[[[[, ,[[[[,'[==/[[[[,    [[[         ,[[ '[[,  [[[[[. '[[ `[[     [[[[[ `[[     [[ ,[[ '[[,  </tspan>
     <tspan x="400" dy="1.3em">$$$$$$$$"$$$  '''    $    $$$        c$$$cc$$$c $$$ "Y$c$$  $$,    $$$$$  $$,    $$c$$$cc$$$c </tspan>
-    <tspan x="400" dy="1.3em">888 Y88" 888o88b    dP    `88bo,__,o, 888   888,888    Y88  888_,o8P'888  888_,o8P' 888   888,</tspan>
-    <tspan x="400" dy="1.3em">MMM  M'  "MMM "YMmMY"mmmmmmm"YUMMMMMP"YMM   ""` MMM     YM  MMMMP"`  MMM  MMMMP"`   YMM   ""` </tspan>
+    <tspan x="400" dy="1.3em"> 888 Y88" 888o88b    dP    `88bo,__,o, 888   888,888    Y88  888_,o8P'888  888_,o8P' 888    888,</tspan>
+    <tspan x="400" dy="1.3em">MMM  M'  "MMM "YMmMY"mmmmmmm"YUMMMMMP"YMM   ""` MMM     YM  MMMMP"`  MMM  MMMMP"`   YMM     ""` </tspan>
   </text>
-  
 </svg>

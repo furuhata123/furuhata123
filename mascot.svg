@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="250" height="220" viewBox="0 0 250 200">
+
+  <style>
+  * {
+     /*border: 2px solid #00FF00; for testing */
+  }
+
+  
+  @keyframes floaty {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(-5px) rotate(0.5deg);
+  }
+
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  }
+
+    .mascot{
+      animation: floaty 6s ease-in-out infinite;
+    }
+
+
+
+  </style>
+<image y="10" height="200" width="250" class="mascot" href="./mascot.png" />
+</svg>
