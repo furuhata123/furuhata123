@@ -3,13 +3,11 @@
 
 ```shell
 to-do list
-- [x] 做完profile
 - [ ] 给网站画脸谱系列，继续学像素画
-- [ ] hobby其他页面
+- [ ] Books+movie page
 ```
 
 Now working on:
-- [The hobby page](https://github.com/furuhata123/hobby)
 - [Maybe an art project](https://github.com/furuhata123/pratibimba) 
 
 <span style="display:block;text-align:center">
